@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ef9f43f-364f-4b5b-8098-035b243e57ff" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\css\ionic.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\css\ionic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\fonts\ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\fonts\ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\fonts\ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\fonts\ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\js\angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\js\angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\js\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\youjieyouhuan_test\lib\js\angular.min.js" afterPath="" />
-    </list>
+    <list default="true" id="0ef9f43f-364f-4b5b-8098-035b243e57ff" name="Default" comment="" />
     <ignored path="youjieyouhuan_test.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
