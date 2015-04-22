@@ -1,0 +1,48 @@
+<div class="list" ng-controller="test">
+  <div class="item">
+    <p>逾期金额（元）</p>
+    <h1>0.00</h1>
+    <div class="row">
+      <div class="col col-50">
+        待还总额
+        <br>
+        1234.5
+      </div>
+      <div class="col col-50">
+        借款总额
+        <br>
+        123.45
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="tabs">
+      <a class="tab-item" ng-click="active = 1">进行中</a>
+      <a class="tab-item" ng-click="active = 2">已完结</a>
+      <a class="tab-item" ng-click="active = 3">未确认</a>
+    </div>
+  </div>
+  <div ng-show='active === 1'>
+    <div class="item row" ng-repeat="i in [0, 1, 2]">
+      <div class="col col-33">1111</div>
+      <div class="col col-33">投标中</div>
+      <div class="col col-33">来自：张三<br>1234-5-6</div>
+    </div>
+  </div>
+
+  <div ng-show='active === 2'>
+    <div class="item row" ng-repeat="i in [0, 1, 2, 3]">
+      <div class="col col-33">2222</div>
+      <div class="col col-33">已完结</div>
+      <div class="col col-33">来自：张三<br>1234-5-6</div>
+    </div>
+  </div>
+
+  <div ng-show='active === 3'>
+    <div class="item row" ng-repeat="i in [0, 1, 2, 3, 4]">
+      <div class="col col-33">1111</div>
+      <div class="col col-33">未确认</div>
+      <div class="col col-33">来自：张三<br>1234-5-6</div>
+    </div>
+  </div>
+</div>

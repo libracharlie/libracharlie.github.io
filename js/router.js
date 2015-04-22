@@ -2,17 +2,18 @@ angular.module('app.router', ['ui.router'])
 
 .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/dashboard/me');
+  $urlRouterProvider.otherwise('/dashboard/0/me');
 
   $stateProvider
   .state('dashboard', {
-    url: '/dashboard',
-    templateUrl: 'templates/dashboard.html'
+    url: '/dashboard/{state}',
+    templateUrl: 'templates/dashboard.html',
+    controller: 'DashboardCtrl'
   })
   .state('dashboard.me', {
     url: '/me',
     views: {
-      'me': {
+      'main': {
         templateUrl: 'templates/dashboard.me.html'
       }
     }
@@ -20,7 +21,7 @@ angular.module('app.router', ['ui.router'])
   .state('dashboard.me.purse', {
     url: '/purse',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.purse.html'
       }
     }
@@ -28,7 +29,7 @@ angular.module('app.router', ['ui.router'])
   .state('dashboard.me.purse.deposit', {
     url: '/deposit',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.purse.deposit.html'
       }
     }
@@ -36,7 +37,7 @@ angular.module('app.router', ['ui.router'])
   .state('dashboard.me.purse.withdraw', {
     url: '/withdraw',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.purse.withdraw.html'
       }
     }
@@ -44,7 +45,7 @@ angular.module('app.router', ['ui.router'])
   .state('dashboard.me.purse.spec', {
     url: '/spec',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.purse.spec.html'
       }
     }
@@ -52,7 +53,7 @@ angular.module('app.router', ['ui.router'])
   .state('dashboard.me.card', {
     url: '/card',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.card.html'
       }
     }
@@ -60,7 +61,7 @@ angular.module('app.router', ['ui.router'])
   .state('dashboard.me.card.step1', {
     url: '/step1',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.card.step1.html'
       }
     }
@@ -68,31 +69,31 @@ angular.module('app.router', ['ui.router'])
   .state('dashboard.me.card.step2', {
     url: '/step2',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.card.step2.html'
       }
     }
   })
-  .state('dashboard.me.borrow', {
-    url: '/borrow',
+  .state('dashboard.me.myBorrow', {
+    url: '/myBorrow',
     views: {
-      'me@dashboard': {
-        templateUrl: 'templates/dashboard.me.borrow.html'
+      'main@dashboard': {
+        templateUrl: 'templates/dashboard.me.myBorrow.html'
       }
     }
   })
-  .state('dashboard.me.lend', {
-    url: '/lend',
+  .state('dashboard.me.myLend', {
+    url: '/myLend',
     views: {
-      'me@dashboard': {
-        templateUrl: 'templates/dashboard.me.lend.html'
+      'main@dashboard': {
+        templateUrl: 'templates/dashboard.me.myLend.html'
       }
     }
   })
   .state('dashboard.me.message', {
     url: '/message',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.message.html'
       }
     }
@@ -100,7 +101,7 @@ angular.module('app.router', ['ui.router'])
   .state('dashboard.me.settings', {
     url: '/settings',
     views: {
-      'me@dashboard': {
+      'main@dashboard': {
         templateUrl: 'templates/dashboard.me.settings.html'
       }
     }
