@@ -8,26 +8,10 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="lib/js/angular.js"></script>
   <script src="lib/js/angular-ui-router.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/router.js"></script>
-  <script src="js/controllers/dashboard.ctrl.js"></script>
 </head>
 <body ui-view>
 <script>
-  var data = {
-    "openid":"oDF3iY9ffA-hqb2vVvbr7qxf6A0Q",
-    "remark":"pangzi"
-  };
 
-  var req = new XMLHttpRequest();
-  req.open('POST', 'https://api.weixin.qq.com/cgi-bin/user/info/updaterqemark?access_token=ACCESS_TOKEN');
-  req.onreadystatechange = function () {
-    if (req.readyState = 4 && req.status === 200) {
-      alert(req.responseText);
-    }
-  };
-  req.setRequestHeader('Content-Type', 'application/json');
-  req.send(JSON.stringify(data));
 </script>
 </body>
 </html>
